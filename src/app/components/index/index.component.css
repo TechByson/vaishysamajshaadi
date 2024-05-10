@@ -694,21 +694,7 @@ body{
 .center_6_middle_left{
    margin-top: 8px;
 }
-.overlay {
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 15px;
-   right: 0;
-   height: 100%;
-   width: 98%;
-   opacity: 0;
-   transition: .5s ease;
-   background-color: rgb(43, 189, 155);
- }
- .containerflexo:hover .overlay {
-   opacity: 0.8;
- }
+
  .text {
    color: white;
    font-size: 20px;

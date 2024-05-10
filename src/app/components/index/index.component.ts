@@ -3,30 +3,18 @@ import {MatDividerModule} from '@angular/material/divider';
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
 import { FooterComponent } from '../../shared/footer/footer.component';
 import { CommonModule } from '@angular/common';
+import { SliderComponent } from '../../shared/slider/slider.component';
 
 @Component({
   selector: 'app-index',
   standalone: true,
-  imports: [CommonModule,NavbarComponent,FooterComponent,MatDividerModule],
+  imports: [CommonModule,NavbarComponent,FooterComponent,MatDividerModule,SliderComponent],
   templateUrl: './index.component.html',
   styleUrl: './index.component.css'
 })
 export class IndexComponent implements AfterViewInit {
   constructor(private eleref:ElementRef){}
-  TestiMonialImage:any = [
-    {
-      img:'../../../assets/img/test1.jpg',
-      name:'Hiro'
-    },
-    {
-      img:'../../../assets/img/test2.jpg',
-      name:'Hiro'
-    },
-    {
-      img:'../../../assets/img/test3.jpeg',
-      name:'Hiro'
-    },
-  ]
+ 
   HappyFaces:any=[
     {
       images:'https://vaishyasamajshaadi.com/image/story1.jpg',

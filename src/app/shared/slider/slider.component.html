@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="slider-wrapper">
+      <button id="prev-slide" class="slide-button material-symbols-rounded">
+        <i class="fa fa-chevron-circle-left"></i>
+      </button>
+      <ul class="image-list">
+        @for (images of TestiMonialImage; track images) {
+            <img class="image-item" [src]="images.img" alt="img-2" />
+            <div class="overlay">
+                <div class="text">{{images.name}}</div>
+            </div>
+            } 
+      </ul>
+      <button id="next-slide" class="slide-button material-symbols-rounded">
+        <i class="fa fa-chevron-circle-right"></i>
+      </button>
+    </div>
+    <div class="slider-scrollbar">
+      <div class="scrollbar-track">
+        <div class="scrollbar-thumb"></div>
+      </div>
+    </div>
+  </div>
