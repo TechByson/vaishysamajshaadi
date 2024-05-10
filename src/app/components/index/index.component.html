@@ -132,19 +132,7 @@
                     <hr class="hr_1">
                 </div>
                 <div class="center_6_middle clearfix">
-                    @for (images of TestiMonialImage; track images) {
-                    <div class="col-sm-4 center_6_middle_left clearfix">
-                        <div class="center_6_middle_left_inner clearfix containerflexo">
-                            <p>
-                                <img [src]="images.img">
-                            </p>
-                            <div class="overlay">
-                                <div class="text">{{images.name}}</div>
-                            </div>
-                        </div>
-                    </div>
-                    }
-
+                    <app-slider></app-slider>
                 </div>
                 <div class="center_6_bottom clearfix">
                     <h5><a href="#">VIEW MORE TESTIMONIALS</a></h5>
